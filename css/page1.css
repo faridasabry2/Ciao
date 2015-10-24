@@ -47,6 +47,8 @@
 
 .btn-group-collapse>a{
   margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 30px;
 }
 
@@ -82,4 +84,16 @@ footer {
 small {
     padding-top: 5px;
     border-top: 1px solid;
+}
+
+.btn-ciao {
+  color: #000;
+  background-color: #FEDF62;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.btn-ciao:hover {
+  color: #2397CA;
+  background-color: #FEDF62;
 }
