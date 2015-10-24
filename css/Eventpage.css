@@ -18,7 +18,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    right: 0;
+    left: 0;
     z-index: 1000;
     display: block;
     padding: 10px;
@@ -36,7 +36,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
+    right: 0;
     z-index: 1000;
     display: block;
     padding: 10px;
@@ -110,4 +110,9 @@
 
 form {
   margin-top: 10px;
+}
+
+#cog1 {
+  font-size: 20px;
+  float: right;
 }
