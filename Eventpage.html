@@ -6,18 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ciao! Events</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/page1.css" rel="stylesheet">
-    <script src="js/bootstrap.min.js"></script>
+    <link href="css/Eventpage.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $('#myTabs a').click(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+      })
+    </script>
   </head>
 
   <body>
+    <div class="navbar">
+      <ul class="nav nav-pills" role="tablist">
+        <li role="presentation"><a href="" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+      </ul>
+    </div>
     <div class="page-header">
       <h1>Events</h1>
+    </div>
+    <div class="container" id="recent">
+      <div class="row">
+        <div class="photo-wall col-xs-6 col-md-3">
+          <a class="thumbnail">
+            <img src="photo/shenghuo1.jpg" style="width: 100%;">
+            <div class="classicon">
+              <h1>Amy</h1>
+              <h3><strong>Amherst, Running</strong></h3>
+            </div>
+          </a>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user1">Join</button>
+          <div id="user1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" style=""><strong></strong></h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">
+                    <a href="">Join</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-wall col-xs-6 col-md-3">
+          <a class="thumbnail">
+            <img src="photo/shenghuo1.jpg" style="width: 100%;">
+            <div class="classicon">
+              <h1>Danny</h1>
+              <h3><strong>Hampshire, shopping</strong></h3>
+            </div>
+          </a>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user2">Join</button>
+          <div id="user2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user2" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" style=""><strong></strong></h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">
+                    <a href="">Join</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-wall col-md-3">
+          <a class="thumbnail">
+            <img src="photo/shenghuo1.jpg" style="width: 100%;">
+            <div class="classicon">
+              <h1>Harry</h1>
+              <h3><strong>Mount, Climbing</strong></h3>
+            </div>
+          </a>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user3">Join</button>
+          <div id="user3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user3" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" style=""><strong></strong></h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">
+                    <a href="">Join</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-wall col-md-3">
+          <a class="thumbnail">
+            <img src="photo/shenghuo1.jpg" style="width: 100%;">
+            <div class="classicon">
+              <h1>Tom</h1>
+              <h3><strong>Recreation Center, Basketball</strong></h3>
+            </div>
+          </a>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user4">Join</button>
+          <div id="user4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user4" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" style=""><strong></strong></h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success">
+                    <a href="">Join</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
     <div class="page-header">
       <h1>Recommendations</h1>
     </div>
+      <div class="container" id="recommend">
+        <div class="row">
+          <div class="photo-wall col-xs-6 col-md-3">
+            <a class="thumbnail">
+              <img src="photo/shenghuo1.jpg" style="width: 100%;">
+              <div class="classicon">
+                <h1>Tom</h1>
+                <h3><strong>Recreation Center, Basketball</strong></h3>
+              </div>
+            </a>
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user5">Join</button>
+            <div id="user5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user5" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" style=""><strong></strong></h4>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">
+                      <a href="">Join</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-wall col-xs-6 col-md-3">
+            <a class="thumbnail">
+              <img src="photo/shenghuo1.jpg" style="width: 100%;">
+              <div class="classicon">
+                <h1>Tom</h1>
+                <h3><strong>Recreation Center, Basketball</strong></h3>
+              </div>
+            </a>
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user6">Join</button>
+            <div id="user6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user6" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" style=""><strong></strong></h4>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">
+                      <a href="">Join</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-wall col-md-3">
+            <a class="thumbnail">
+              <img src="photo/shenghuo1.jpg" style="width: 100%;">
+              <div class="classicon">
+                <h1>Tom</h1>
+                <h3><strong>Recreation Center, Basketball</strong></h3>
+              </div>
+            </a>
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user7">Join</button>
+            <div id="user7" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user7" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" style=""><strong></strong></h4>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">
+                      <a href="">Join</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="photo-wall col-md-3">
+            <a class="thumbnail">
+              <img src="photo/shenghuo1.jpg" style="width: 100%;">
+              <div class="classicon">
+                <h1>Tom</h1>
+                <h3><strong>Recreation Center, Basketball</strong></h3>
+              </div>
+            </a>
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user8">Join</button>
+            <div id="user8" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user8" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" style=""><strong></strong></h4>
+                  </div>
+                  <div class="modal-body">
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">
+                      <a href="">Join</a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="col-sm-3 col-md-2 sidebar">
       <h1>Profile</h1>
     </div>
