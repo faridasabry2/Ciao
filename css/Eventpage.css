@@ -11,7 +11,7 @@
 .page-header{
     height: 30%;
     margin-top: 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .sidebar {
@@ -31,8 +31,11 @@
     border-top: 10px solid #d8e9e6;
     text-align: center;
 }
+.events{
+    padding-left: 19%;
+}
 
-#category {
+.category {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -53,7 +56,6 @@
     text-align: center;
     top: 15%;
     bottom: 0;
-    margin-left: 19%;
 }
 .photo-wall{
     float: left;
