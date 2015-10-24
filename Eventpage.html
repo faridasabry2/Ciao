@@ -15,17 +15,17 @@
       $(window).load(function(){
         $("[data-toggle]").click(function() {
           var toggle_el = $(this).data("toggle");
-          $(toggle_el).toggleClass("open-sidebar");
+          $(toggle_el).toggleClass("sidebar");
         });
          $(".swipe-area").swipe({
               swipeStatus:function(event, phase, direction, distance, duration, fingers)
                   {
                       if (phase=="move" && direction =="right") {
-                           $(".container").addClass("open-sidebar");
+                           $(".container").addClass("sidebar");
                            return false;
                       }
                       if (phase=="move" && direction =="left") {
-                           $(".container").removeClass("open-sidebar");
+                           $(".container").removeClass("sidebar");
                            return false;
                       }
                   }
@@ -47,16 +47,6 @@
 
   <body>
     <div class="onepage">
-        <div class="container">
-          <div class="main-content">
-            <div class="swipe-area"></div>
-            <a href="#" data-toggle=".container" id="sidebar-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </a>
-            </div>
-      </div>
       <!-- TOGGLE END? -->
       <div class="page-header">
         <h1>Friends</h1>
@@ -165,15 +155,15 @@
       </div>
     </div>
 
-    <div class="col-sm-3 col-md-2 sidebar fixed-right">
+    <div class="col-sm-3 col-md-2 sidebar fixed-left">
       <a><span class="glyphicon glyphicon-cog" id="cog1"></span></a>
       <h1>John Doe</h1>
       <a><img src="ciao-logo.png" class="img-thumbnail" style="width: 150px;height: 150px;"></a>
       <form>
         <ul class="nav nav-pills nav-justified" role="tablist">
-          <li role="presentation" class="active"><a href="#" role="tab" aria-controls="location" data-toggle="tab">Location</a></li>
-          <li role="presentation"><a href="#" role="tab" aria-controls="events" data-toggle="tab">Events</a></li>
-          <li role="presentation"><a href="#" role="tab" aria-controls="friends" data-toggle="tab">Friends</a></li>
+          <li role="presentation" class="active"><a href="#" role="tab" aria-controls="location" data-toggle="tab"><span class="glyphicon glyphicon-user"></span></a></li>
+          <li role="presentation"><a href="#" role="tab" aria-controls="events" data-toggle="tab"><span class="glyphicon glyphicon-calendar"></span></a></li>
+          <li role="presentation"><a href="#" role="tab" aria-controls="friends" data-toggle="tab"><span class="glyphicon glyphicon-bell"></span></a></li>
         </ul>
       </form>
     </div>
