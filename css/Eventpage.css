@@ -1,8 +1,10 @@
-.body{
-}
-.container{
+.onepage{
     height: 30%;
     margin-top: 30px;
+    text-align: center;
+}
+.twopage{
+    height: 30%;
     text-align: center;
 }
 .page-header{
@@ -47,7 +49,6 @@
     text-align: center;
 }
 #recent{
-    position: fixed;
     text-align: center;
     top: 15%;
     bottom: 0;
@@ -86,6 +87,6 @@
 .classicon:hover{
     background: #1eb450;
     opacity: 0.9;
-    trasition: opacity 0.5s;
+    transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
 }

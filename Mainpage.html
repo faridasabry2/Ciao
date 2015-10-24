@@ -4,23 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=width-device-width, initial-scale=1">
-    <title>Ciao!</title>
+    <title>CiaoConncect</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/page1.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container" id="page1">
-        <img src=""></img>
-        <h1>Ciao!</h1>
-        <p>Welcome to Ciao! Enjoy the connection!</p>
+    <div class="side-nav" role="navigation">
+        <ul class="nav-side-nav">
+            <li><a class="tooltip-side-nav" href="#page1"></a></li>
+            <li><a class="tooltip-side-nav" href="#page2"></a></li>
+            <li><a class="tooltip-side-nav" href="#page3"></a></li>
+        </ul>
     </div>
-    <div class="container">
-        <a class="btn btn-success" href="#login">Log In</a>
-        <a class="btn btn-success" href="#signup">Sign In</a>
+    <div class="page1"  id="page1">
+        <div class="container pageone">
+            <img src="ciao-logo.png" style="width: 350px; height: 350px;">
+            <h1>Ciao!</h1>
+            <p>Welcome to Ciao! Enjoy the connection!</p>
+        </div>
+        <div class="btn-group-collapse">
+            <a class="btn btn-success" href="#login">Log In</a>
+            <a class="btn btn-success" href="#signup">Sign In</a>
+        </div>
     </div>
-    <div class="container page2" id="login">
+
+    <div class="container page2" id="page2">
+        <h1 class="page-header" id="login">Log In</h1>
         <form>
             <div class="form-group">
                 <label>Username</label>
@@ -32,8 +43,7 @@
             </div>
             <a class="btn btn-success btn-lg" type="submit">Log in</a>
         </form>
-    </div>
-    <div class="container" id="page3">
+        <h1 class="page-header" id="signup">Sign Up</h1>
         <form>
             <div class="form-group">
                 <label>Firstname</label>
@@ -49,6 +59,10 @@
             </div>
             <a class="btn btn-success btn-lg" type="submit">Sign up</a>
         </form>
+    </div>
+
+    <div class="container" id="page3">
+        <h1 class="aboutus headcontent">About Us</h1>
     </div>
 </body>
 </html>
