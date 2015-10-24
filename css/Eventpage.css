@@ -5,11 +5,12 @@
 }
 .twopage{
     height: 30%;
+    margin-bottom: 30px;
     text-align: center;
 }
 .page-header{
     height: 30%;
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -24,10 +25,10 @@
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-left: 10px solid #eee;
-    border-right: 10px solid #eee;
-    border-bottom: 10px solid #eee;
-    border-top: 10px solid #eee;
+    border-left: 10px solid #d8e9e6;
+    border-right: 10px solid #d8e9e6;
+    border-bottom: 10px solid #d8e9e6;
+    border-top: 10px solid #d8e9e6;
     text-align: center;
 }
 
@@ -42,10 +43,10 @@
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #f5f5f5;
-    border-left: 10px solid #eee;
-    border-right: 10px solid #eee;
-    border-bottom: 10px solid #eee;
-    border-top: 10px solid #eee;
+    border-left: 10px solid #2397CA;
+    border-right: 10px solid #2397CA;
+    border-bottom: 10px solid #2397CA;
+    border-top: 10px solid #2397CA;
     text-align: center;
 }
 #recent{
@@ -85,8 +86,20 @@
     opacity: 0;
 }
 .classicon:hover{
-    background: #1eb450;
+    background: #2397CA;
     opacity: 0.9;
     transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
+}
+.modal-header {
+  border-bottom: 1px solid #9a9a9a;
+}
+
+.modal-footer {
+  border-top: 1px solid #9a9a9a;
+}
+
+.btn-ciao {
+  color: #ffffff;
+  background-color: #2397CA;
 }

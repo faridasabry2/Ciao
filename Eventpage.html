@@ -25,7 +25,7 @@
   <body>
     <div class="onepage">
       <div class="page-header">
-        <h1>Events</h1>
+        <h1>Friends</h1>
       </div>
       <div class="container" id="recent">
         <div class="row">
@@ -37,7 +37,7 @@
                 <h3><strong>Amherst, Running</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user" data-whatever="#user1">See more</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user" data-whatever="#user1">See More</button>
           </div>
 
 
@@ -50,7 +50,7 @@
                 <h3><strong>Hampshire, shopping</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user" data-whatever="#user2">See more</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user" data-whatever="#user2">See More</button>
           </div>
 
           <div class="photo-wall col-md-3">
@@ -61,7 +61,7 @@
                 <h3><strong>Mount, Climbing</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user"data-whatever="#user3">See more</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user"data-whatever="#user3">See More</button>
           </div>
 
           <div class="photo-wall col-md-3">
@@ -72,7 +72,7 @@
                 <h3><strong>Recreation Center, Basketball</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user"data-whatever="#user4">See more</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user"data-whatever="#user4">See More</button>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
 
     <div class="twopage">
       <div class="page-header">
-        <h1>Recommendations</h1>
+        <h1>Trends</h1>
       </div>
       <div class="container" id="recommend">
         <div class="row">
@@ -92,7 +92,7 @@
                 <h3><strong>Recreation Center, Basketball</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user5">Join</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user5">Join</button>
           </div>
 
           <div class="photo-wall col-xs-6 col-md-3">
@@ -103,7 +103,7 @@
                 <h3><strong>Recreation Center, Basketball</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user6">Join</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user6">Join</button>
           </div>
 
           <div class="photo-wall col-md-3">
@@ -114,7 +114,7 @@
                 <h3><strong>Recreation Center, Basketball</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user7">Join</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user7">Join</button>
           </div>
 
           <div class="photo-wall col-md-3">
@@ -125,7 +125,7 @@
                 <h3><strong>Recreation Center, Basketball</strong></h3>
               </div>
             </a>
-            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#user8">Join</button>
+            <button type="button" class="btn btn-ciao btn-lg" data-toggle="modal" data-target="#user8">Join</button>
           </div>
         </div>
       </div>
@@ -135,17 +135,18 @@
       <h1>Profile</h1>
       <a><img src="ciao-logo.png" style="width: 150px;height: 150px;"></a>
       <form>
-        <ul class="nav nav-pills" role="tablist">
+        <ul class="nav nav-pills nav-justified" role="tablist">
           <li role="presentation" class="active"><a href="#" role="tab" aria-controls="location" data-toggle="tab">Location</a></li>
           <li role="presentation"><a href="#" role="tab" aria-controls="events" data-toggle="tab">Events</a></li>
           <li role="presentation"><a href="#" role="tab" aria-controls="friends" data-toggle="tab">Friends</a></li>
         </ul>
       </form>
     </div>
-    <div class="col-sm-3 col-md-2 sidebar fixed-left" id="category">
+    <!-- SIDEBAR POSSIBILITY -->
+    <!-- <div class="col-sm-3 col-md-2 sidebar fixed-left" id="category">
       <h1>Activities</h1>
       <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#createevent">Create an Event</button>
-    </div>
+    </div> -->
     <div id="user1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="user1" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -171,14 +172,20 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="userlabel">New activity</h4>
+            <h3 class="modal-title" id="userlabel">Event Name</h3>
           </div>
           <div class="modal-body">
+            <ul>
+              <li><h4 class="modal-body" id="userlabel">Event Date - Time</h4></li>
+              <li><h4 class="modal-body" id="userlabel">Event Description</h4></li>
+              <li><h4 class="modal-body" id="userlabel">Event Distance</h4></li>
+              <li><h4 class="modal-body" id="userlabel">Event Location (Private-Only or Invited)</h4></li>
+            </ul>
             <p>User is going to have a plan at...</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Join</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button type="button" class="btn btn-primary">Send Message</button>
           </div>
         </div>
       </div>
@@ -188,7 +195,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal title" id="createlabel">Create a new Event</h4>
+          <h4 class="modal title" id="createlabel">Create A New Event</h4>
         </div>
         <div class="modal-body">
           <form>
