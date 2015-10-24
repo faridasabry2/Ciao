@@ -9,6 +9,29 @@
     <link href="css/Eventpage.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.touchSwipe.min.js"></script>
+      <link href="css/Eventpage.css" rel="stylesheet">
+    <script type="text/javascript">
+      $(window).load(function(){
+        $("[data-toggle]").click(function() {
+          var toggle_el = $(this).data("toggle");
+          $(toggle_el).toggleClass("open-sidebar");
+        });
+         $(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          });
+      });
+    </script>
     <script>
       $('#user').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
@@ -24,6 +47,17 @@
 
   <body>
     <div class="onepage">
+        <div class="container">
+          <div class="main-content">
+            <div class="swipe-area"></div>
+            <a href="#" data-toggle=".container" id="sidebar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+            </div>
+      </div>
+      <!-- TOGGLE END? -->
       <div class="page-header">
         <h1>Friends</h1>
       </div>
