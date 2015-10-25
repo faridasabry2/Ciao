@@ -61,9 +61,10 @@ body, html {
     -ms-transition:  background 0.3s ease-in-out;
     -o-transition:  background 0.3s ease-in-out;
     transition:  background 0.3s ease-in-out;
-    }
+}
 #sidebar ul li:hover a {
     background: #2397CA;
+    color: #fff;
 }
 .main-content {
     width: 100%;
@@ -115,7 +116,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    position: absolute;
+    float: bottom;
     font-family: Arial;
     margin: 0 90px 0 90px;
     padding-bottom: 10px;
